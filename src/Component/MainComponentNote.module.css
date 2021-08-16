@@ -1,0 +1,60 @@
+header,textarea,.Note,.Note2{
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    color: wheat;
+    background: linear-gradient(45deg, #a00479,#5003e0, #8403fcb2);
+    font-weight: 600;
+}
+.Note,.Note2{
+    background: linear-gradient(45deg, #0489a0,#03e066, #0328fcb2);
+    position: relative;
+    left: 0;
+    animation: noteLeft 1s;
+    text-align: left;
+
+}
+.Note2{
+    background: linear-gradient(45deg, #04a08b,#035be0, #8403fcb2);
+    
+}
+.id{
+    margin-right: 20px;
+}
+.delete{
+    background-color: transparent;
+    border: none;
+    color:red;
+    font-weight: 900;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    font-size: 20px;
+    transition: all 0.2s ;
+}
+.delete:hover{
+    text-shadow: 0 0 3px white;
+}
+@keyframes noteLeft {
+    0%{left:-100%};
+    100%{left:0};
+}
+.divAddNote{
+    width: 80%;
+    margin: 10px auto;
+    text-align: end;
+    
+}
+.addNote{
+    border:none;
+    cursor: pointer;
+    background: linear-gradient(45deg, #a00479,#5003e0, #8403fcb2);
+    border-radius: 10px;
+    padding: 10px 12px;
+    color:white;
+    font-weight: 700;
+}
